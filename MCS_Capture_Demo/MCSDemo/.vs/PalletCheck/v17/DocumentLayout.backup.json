@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\",
+  "WorkspaceRootPath": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|e:\\upwork\\mcs\\sick_mcs_capture_demo\\mcsdemo\\statuswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:statuswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|e:\\upwork\\mcs\\sick_mcs_capture_demo\\mcsdemo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|e:\\upwork\\mcs\\sick_mcs_capture_demo\\mcsdemo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|e:\\upwork\\mcs\\mcs_capture_demo\\mcsdemo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|e:\\upwork\\mcs\\sick_mcs_capture_demo\\mcsdemo\\mcscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\plccomms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:plccomms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\statuswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:statuswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\mcscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:mcscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|e:\\upwork\\mcs\\sick_mcs_capture_demo\\mcsdemo\\mcscamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\mcscamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:mcscamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|e:\\upwork\\mcs\\sick_mcs_capture_demo\\mcsdemo\\paramconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\paramconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C89BE58-40E8-49F3-AE26-A6EA75BFFB86}|PalletCheck.csproj|solutionrelative:paramconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,25 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 603,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MCSCommand.cs",
-              "DocumentMoniker": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\MCSCommand.cs",
+              "DocumentMoniker": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\MCSCommand.cs",
               "RelativeDocumentMoniker": "MCSCommand.cs",
-              "ToolTip": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\MCSCommand.cs",
+              "ToolTip": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\MCSCommand.cs",
               "RelativeToolTip": "MCSCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T00:23:04.796Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAtwNoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T15:40:54.993Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -60,67 +76,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAJECAAAAAAAAAAAtwJ0CAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:40:54.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MCSCamera.cs",
-              "DocumentMoniker": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\MCSCamera.cs",
-              "RelativeDocumentMoniker": "MCSCamera.cs",
-              "ToolTip": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\MCSCamera.cs",
-              "RelativeToolTip": "MCSCamera.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAgwB8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:54:47.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StatusWindow.cs",
-              "DocumentMoniker": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\StatusWindow.cs",
-              "RelativeDocumentMoniker": "StatusWindow.cs",
-              "ToolTip": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\StatusWindow.cs",
-              "RelativeToolTip": "StatusWindow.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAWwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T02:22:35.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T02:12:05.752Z",
-              "EditorCaption": ""
+              "Title": "PLCComms.cs",
+              "DocumentMoniker": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\PLCComms.cs",
+              "RelativeDocumentMoniker": "PLCComms.cs",
+              "ToolTip": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\PLCComms.cs",
+              "RelativeToolTip": "PLCComms.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T03:30:23.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatusWindow.cs",
+              "DocumentMoniker": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\StatusWindow.cs",
+              "RelativeDocumentMoniker": "StatusWindow.cs",
+              "ToolTip": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\StatusWindow.cs",
+              "RelativeToolTip": "StatusWindow.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAWwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:22:35.63Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "MCSCamera.cs",
+              "DocumentMoniker": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\MCSCamera.cs",
+              "RelativeDocumentMoniker": "MCSCamera.cs",
+              "ToolTip": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\MCSCamera.cs",
+              "RelativeToolTip": "MCSCamera.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwB8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:54:47.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T02:12:05.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ParamConfig.cs",
-              "DocumentMoniker": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\ParamConfig.cs",
+              "DocumentMoniker": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\ParamConfig.cs",
               "RelativeDocumentMoniker": "ParamConfig.cs",
-              "ToolTip": "E:\\Upwork\\mcs\\Sick_MCS_Capture_Demo\\MCSDemo\\ParamConfig.cs",
+              "ToolTip": "E:\\Upwork\\mcs\\MCS_Capture_Demo\\MCSDemo\\ParamConfig.cs",
               "RelativeToolTip": "ParamConfig.cs",
               "ViewState": "AgIAAKkAAAAAAAAAAAAAwLMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T00:45:50.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T00:45:50.286Z"
             }
           ]
         }
