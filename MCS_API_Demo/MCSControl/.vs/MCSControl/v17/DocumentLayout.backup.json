@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47EF63FF-AE4C-45F1-8A7F-69D96CAF601F}|MCSControl\\MCSControl.csproj|e:\\upwork\\zmq\\mcscontrol\\mcscontrol\\mcscontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EF63FF-AE4C-45F1-8A7F-69D96CAF601F}|MCSControl\\MCSControl.csproj|solutionrelative:mcscontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EF63FF-AE4C-45F1-8A7F-69D96CAF601F}|MCSControl\\MCSControl.csproj|e:\\upwork\\zmq\\mcscontrol\\mcscontrol\\mcscontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{47EF63FF-AE4C-45F1-8A7F-69D96CAF601F}|MCSControl\\MCSControl.csproj|solutionrelative:mcscontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EF63FF-AE4C-45F1-8A7F-69D96CAF601F}|MCSControl\\MCSControl.csproj|E:\\Upwork\\zmq\\MCSControl\\MCSControl\\mcscontrol\\mcsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EF63FF-AE4C-45F1-8A7F-69D96CAF601F}|MCSControl\\MCSControl.csproj|solutionrelative:mcscontrol\\mcsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EF63FF-AE4C-45F1-8A7F-69D96CAF601F}|MCSControl\\MCSControl.csproj|e:\\upwork\\zmq\\mcscontrol\\mcscontrol\\mcscontrol\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EF63FF-AE4C-45F1-8A7F-69D96CAF601F}|MCSControl\\MCSControl.csproj|solutionrelative:mcscontrol\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 603,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MCSAPI.cs",
+              "DocumentMoniker": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\MCSControl\\MCSAPI.cs",
+              "RelativeDocumentMoniker": "MCSControl\\MCSAPI.cs",
+              "ToolTip": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\MCSControl\\MCSAPI.cs",
+              "RelativeToolTip": "MCSControl\\MCSAPI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:33:17.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\MCSControl\\Form1.cs",
+              "RelativeDocumentMoniker": "MCSControl\\Form1.cs",
+              "ToolTip": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\MCSControl\\Form1.cs [Design]",
+              "RelativeToolTip": "MCSControl\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T02:27:47.089Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\MCSControl\\Form1.cs",
+              "RelativeDocumentMoniker": "MCSControl\\Form1.cs",
+              "ToolTip": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\MCSControl\\Form1.cs",
+              "RelativeToolTip": "MCSControl\\Form1.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAcwJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T15:43:18.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\MCSControl\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "MCSControl\\Form1.Designer.cs",
+              "ToolTip": "E:\\Upwork\\zmq\\MCSControl\\MCSControl\\MCSControl\\Form1.Designer.cs",
+              "RelativeToolTip": "MCSControl\\Form1.Designer.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAwwD8BAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:25:23.258Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
