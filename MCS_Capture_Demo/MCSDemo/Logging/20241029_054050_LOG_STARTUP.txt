@@ -1,0 +1,184 @@
+|2024/10/29 05:40:50:951|  
+|2024/10/29 05:40:50:951|  ======================================================================
+|2024/10/29 05:40:50:951|  ===                    PalletCheck MCS STARTUP                     ===
+|2024/10/29 05:40:50:951|  ======================================================================
+|2024/10/29 05:40:50:951|  
+|2024/10/29 05:40:50:951|  ExeRootDir:                    E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\bin\x64\Debug
+|2024/10/29 05:40:50:951|  ConfigRootDir:                 E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Config
+|2024/10/29 05:40:50:951|  HistoryRootDir:                E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History
+|2024/10/29 05:40:50:951|  RecordingRootDir:              E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings
+|2024/10/29 05:40:50:951|  SegmentationErrorRootDir:      E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings\SegmentationErrors
+|2024/10/29 05:40:50:951|  LoggingRootDir:                E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging
+|2024/10/29 05:40:50:951|  ExceptionsRootDir:             E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging\Exceptions
+|2024/10/29 05:40:50:951|  SettingsHistoryRootDir:        E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\SettingsHistory
+|2024/10/29 05:40:50:951|  CameraConfigHistoryRootDir:    E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\CameraConfigHistory
+|2024/10/29 05:40:50:951|  SnapshotsRootDir:              E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\Snapshots
+|2024/10/29 05:40:50:951|  
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\CONFIG
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS\SEGMENTATIONERRORS
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\LOGGING
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\LOGGING\EXCEPTIONS
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SETTINGSHISTORY
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SNAPSHOTS
+|2024/10/29 05:40:50:951|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\CAMERACONFIGHISTORY
+|2024/10/29 05:40:54:525|  
+|2024/10/29 05:40:54:525|  ======================================================================
+|2024/10/29 05:40:54:525|  ===                      ParamStorage::Load()                      ===
+|2024/10/29 05:40:54:525|  ======================================================================
+|2024/10/29 05:40:54:525|  
+|2024/10/29 05:40:54:525|  E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Config\DefaultParams.txt
+|2024/10/29 05:40:54:525|  No file exists
+|2024/10/29 05:41:00:640|  PLCComms::Start()  IP:127.0.0.1  Port:11000
+|2024/10/29 05:41:00:642|  Starting Storage Watchdog
+|2024/10/29 05:41:00:652|  MCS Creating Ruler1 at 
+|2024/10/29 05:41:00:687|  
+|2024/10/29 05:41:00:687|  ======================================================================
+|2024/10/29 05:41:00:687|  ===               CurrentDomainOnUnhandledException                ===
+|2024/10/29 05:41:00:687|  ======================================================================
+|2024/10/29 05:41:00:687|  
+|2024/10/29 05:41:00:688|  
+|2024/10/29 05:41:00:688|  ======================================================================
+|2024/10/29 05:41:00:688|  ===                 !!! EXCEPTION HAS OCCURRED !!!                 ===
+|2024/10/29 05:41:00:688|  ======================================================================
+|2024/10/29 05:41:00:688|  
+|2024/10/29 05:41:00:688|  
+|                       |  
+|                       |  
+|2024/10/29 05:41:00:688|  Message:
+|                       |  The type initializer for 'Sick.GenIStream.genistreamPINVOKE' threw an exception.
+|2024/10/29 05:41:00:701|  Source:
+|                       |  Sick.GenIStreamDotNet
+|2024/10/29 05:41:00:701|  StackTrace:
+|                       |     at Sick.GenIStream.genistreamPINVOKE.CameraDiscovery_CreateFromProducerFile(String jarg1)
+|                       |     at Sick.GenIStream.CameraDiscovery.CreateFromProducerFile(String absolutePath)
+|                       |     at PalletCheck.RulerCamera.Startup(String Name, Int32 Index, String IPAddress, NewFrameReceivedCB NewFrameReceivedCallback, ConnectionStateChangeCB ConnectionStateChangeCallback, CaptureStateChangeCB CaptureStateChangeCallback) in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\RulerCamera.cs:line 102
+|                       |     at MCS.MCSCamera.Startup(String Name, String IPAddress, NewFrameReceivedCB NewFrameReceivedCallback, ConnectionStateChangeCB ConnectionStateChangeCallback, CaptureStateChangeCB CaptureStateChangeCallback) in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\MCSCamera.cs:line 84
+|                       |     at PalletCheck.MainWindow.Window_Loaded(Object sender, RoutedEventArgs e) in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\MainWindow.xaml.cs:line 324
+|                       |     at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+|                       |     at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+|                       |     at System.Windows.BroadcastEventHelper.BroadcastEvent(DependencyObject root, RoutedEvent routedEvent)
+|                       |     at System.Windows.BroadcastEventHelper.BroadcastLoadedEvent(Object root)
+|                       |     at MS.Internal.LoadedOrUnloadedOperation.DoWork()
+|                       |     at System.Windows.Media.MediaContext.FireLoadedPendingCallbacks()
+|                       |     at System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks()
+|                       |     at System.Windows.Media.MediaContext.RenderMessageHandlerCore(Object resizedCompositionTarget)
+|                       |     at System.Windows.Media.MediaContext.RenderMessageHandler(Object resizedCompositionTarget)
+|                       |     at System.Windows.Interop.HwndTarget.OnResize()
+|                       |     at System.Windows.Interop.HwndTarget.HandleMessage(WindowMessage msg, IntPtr wparam, IntPtr lparam)
+|                       |     at System.Windows.Interop.HwndSource.HwndTargetFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+|                       |     at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+|                       |     at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+|                       |     at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+|                       |     at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+|                       |     at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+|                       |     at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+|2024/10/29 05:41:00:701|  TargetSite:
+|                       |  IntPtr CameraDiscovery_CreateFromProducerFile(System.String)
+|2024/10/29 05:41:00:718|  
+|                       |  
+|                       |  
+|2024/10/29 05:41:00:718|  Message:
+|                       |  The type initializer for 'SWIGExceptionHelper' threw an exception.
+|2024/10/29 05:41:00:718|  Source:
+|                       |  Sick.GenIStreamDotNet
+|2024/10/29 05:41:00:718|  StackTrace:
+|                       |     at Sick.GenIStream.genistreamPINVOKE.SWIGExceptionHelper..ctor()
+|                       |     at Sick.GenIStream.genistreamPINVOKE..cctor()
+|2024/10/29 05:41:00:718|  TargetSite:
+|                       |  Void .ctor()
+|2024/10/29 05:41:00:721|  
+|                       |  
+|                       |  
+|2024/10/29 05:41:00:721|  Message:
+|                       |  Unable to load DLL 'GenIStreamDotNetInterop': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+|2024/10/29 05:41:00:721|  Source:
+|                       |  Sick.GenIStreamDotNet
+|2024/10/29 05:41:00:721|  StackTrace:
+|                       |     at Sick.GenIStream.genistreamPINVOKE.SWIGExceptionHelper.SWIGRegisterExceptionCallbacks_genistream(ExceptionDelegate applicationDelegate, ExceptionDelegate arithmeticDelegate, ExceptionDelegate divideByZeroDelegate, ExceptionDelegate indexOutOfRangeDelegate, ExceptionDelegate invalidCastDelegate, ExceptionDelegate invalidOperationDelegate, ExceptionDelegate ioDelegate, ExceptionDelegate nullReferenceDelegate, ExceptionDelegate outOfMemoryDelegate, ExceptionDelegate overflowDelegate, ExceptionDelegate systemExceptionDelegate)
+|                       |     at Sick.GenIStream.genistreamPINVOKE.SWIGExceptionHelper..cctor()
+|2024/10/29 05:41:00:721|  TargetSite:
+|                       |  Void SWIGRegisterExceptionCallbacks_genistream(ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate)
+|2024/10/29 05:41:05:668|  
+|2024/10/29 05:41:05:668|  ======================================================================
+|2024/10/29 05:41:05:668|  ===                         STORAGE UPDATE                         ===
+|2024/10/29 05:41:05:668|  ======================================================================
+|2024/10/29 05:41:05:668|  
+|2024/10/29 05:41:05:697|  Storage.Root  :  0.036 of 0.000 (GB)  |  396 files,  14 folders
+|2024/10/29 05:41:05:698|  Storage.Recording  :  0.000 of 0.000 (GB)  |  0 files,  1 folders
+|2024/10/29 05:41:05:698|  Storage.Recording.SegErrors  :  0.000 of 0.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:05:698|  Storage.Config  :  0.000 of 0.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:05:698|  Storage.History  :  0.000 of 0.000 (GB)  |  0 files,  3 folders
+|2024/10/29 05:41:05:698|  Storage.History.CameraConfig  :  0.000 of 0.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:05:699|  Storage.History.Settings  :  0.000 of 0.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:05:699|  Storage.History.Snapshots  :  0.000 of 0.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:05:700|  Storage.Logging  :  0.000 of 0.000 (GB)  |  40 files,  1 folders
+|2024/10/29 05:41:05:701|  Storage.Logging.Exceptions  :  0.000 of 0.000 (GB)  |  18 files,  0 folders
+|2024/10/29 05:41:05:701|  Storage.Drive.C:\  :  22 free(GB)  149 total(GB)  127 used(GB)
+|2024/10/29 05:41:05:701|  Storage.Drive.D:\  :  315 free(GB)  391 total(GB)  76 used(GB)
+|2024/10/29 05:41:05:701|  Storage.Drive.E:\  :  341 free(GB)  390 total(GB)  49 used(GB)
+|2024/10/29 05:41:05:717|  
+|2024/10/29 05:41:05:717|  ======================================================================
+|2024/10/29 05:41:05:717|  ===                       EnforceStorageSize                       ===
+|2024/10/29 05:41:05:717|  ======================================================================
+|2024/10/29 05:41:05:717|  
+|2024/10/29 05:41:05:722|  ParamStorage Value Changed [Storage]  Recording Root Dir Max (MB)
+|                       |  from: n\a
+|                       |  to:   200000
+|2024/10/29 05:41:05:722|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings : is 0 vs 209715200000 with 0/0 files
+|2024/10/29 05:41:05:724|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS\SEGMENTATIONERRORS
+|2024/10/29 05:41:05:724|  ParamStorage Value Changed [Storage]  Segmentation Error Dir Max (MB)
+|                       |  from: n\a
+|                       |  to:   50000
+|2024/10/29 05:41:05:724|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings\SegmentationErrors : is 0 vs 52428800000 with 0/0 files
+|2024/10/29 05:41:05:724|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS\SEGMENTATIONERRORS
+|2024/10/29 05:41:05:724|  ParamStorage Value Changed [Storage]  History Dir Max (MB)
+|                       |  from: n\a
+|                       |  to:   50000
+|2024/10/29 05:41:05:724|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History : is 0 vs 52428800000 with 0/0 files
+|2024/10/29 05:41:05:724|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\CAMERACONFIGHISTORY
+|2024/10/29 05:41:05:724|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SETTINGSHISTORY
+|2024/10/29 05:41:05:724|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SNAPSHOTS
+|2024/10/29 05:41:05:724|  ParamStorage Value Changed [Storage]  Camera Config History Dir Max (MB)
+|                       |  from: n\a
+|                       |  to:   1000
+|2024/10/29 05:41:05:725|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\CameraConfigHistory : is 0 vs 1048576000 with 0/0 files
+|2024/10/29 05:41:05:725|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\CAMERACONFIGHISTORY
+|2024/10/29 05:41:05:725|  ParamStorage Value Changed [Storage]  Settings History Dir Max (MB)
+|                       |  from: n\a
+|                       |  to:   1000
+|2024/10/29 05:41:05:725|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\SettingsHistory : is 0 vs 1048576000 with 0/0 files
+|2024/10/29 05:41:05:725|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SETTINGSHISTORY
+|2024/10/29 05:41:05:725|  ParamStorage Value Changed [Storage]  Snapshots Dir Max (MB)
+|                       |  from: n\a
+|                       |  to:   10000
+|2024/10/29 05:41:05:725|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\Snapshots : is 0 vs 10485760000 with 0/0 files
+|2024/10/29 05:41:05:725|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SNAPSHOTS
+|2024/10/29 05:41:05:725|  ParamStorage Value Changed [Storage]  Logging Dir Max (MB)
+|                       |  from: n\a
+|                       |  to:   10000
+|2024/10/29 05:41:05:726|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging : is 193034 vs 10485760000 with 40/40 files
+|2024/10/29 05:41:05:727|  ParamStorage Value Changed [Storage]  Exceptions Dir Max (MB)
+|                       |  from: n\a
+|                       |  to:   1000
+|2024/10/29 05:41:05:727|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging\Exceptions : is 44512 vs 1048576000 with 18/18 files
+|2024/10/29 05:41:05:728|  
+|2024/10/29 05:41:15:748|  
+|2024/10/29 05:41:15:748|  ======================================================================
+|2024/10/29 05:41:15:748|  ===                         STORAGE UPDATE                         ===
+|2024/10/29 05:41:15:748|  ======================================================================
+|2024/10/29 05:41:15:748|  
+|2024/10/29 05:41:15:759|  Storage.Root  :  0.036 of 0.000 (GB)  |  396 files,  14 folders
+|2024/10/29 05:41:15:759|  Storage.Recording  :  0.000 of 200.000 (GB)  |  0 files,  1 folders
+|2024/10/29 05:41:15:759|  Storage.Recording.SegErrors  :  0.000 of 50.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:15:759|  Storage.Config  :  0.000 of 0.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:15:759|  Storage.History  :  0.000 of 50.000 (GB)  |  0 files,  3 folders
+|2024/10/29 05:41:15:759|  Storage.History.CameraConfig  :  0.000 of 1.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:15:759|  Storage.History.Settings  :  0.000 of 1.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:15:759|  Storage.History.Snapshots  :  0.000 of 10.000 (GB)  |  0 files,  0 folders
+|2024/10/29 05:41:15:760|  Storage.Logging  :  0.000 of 10.000 (GB)  |  40 files,  1 folders
+|2024/10/29 05:41:15:760|  Storage.Logging.Exceptions  :  0.000 of 1.000 (GB)  |  18 files,  0 folders
+|2024/10/29 05:41:15:760|  Storage.Drive.C:\  :  22 free(GB)  149 total(GB)  127 used(GB)
+|2024/10/29 05:41:15:760|  Storage.Drive.D:\  :  315 free(GB)  391 total(GB)  76 used(GB)
+|2024/10/29 05:41:15:760|  Storage.Drive.E:\  :  341 free(GB)  390 total(GB)  49 used(GB)

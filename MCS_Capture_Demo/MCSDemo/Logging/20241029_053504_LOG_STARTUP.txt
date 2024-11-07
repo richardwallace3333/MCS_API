@@ -1,0 +1,27 @@
+|2024/10/29 05:35:04:581|  
+|2024/10/29 05:35:04:581|  ======================================================================
+|2024/10/29 05:35:04:581|  ===                    PalletCheck MCS STARTUP                     ===
+|2024/10/29 05:35:04:581|  ======================================================================
+|2024/10/29 05:35:04:581|  
+|2024/10/29 05:35:04:581|  ExeRootDir:                    E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\bin\x64\Debug
+|2024/10/29 05:35:04:581|  ConfigRootDir:                 E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Config
+|2024/10/29 05:35:04:581|  HistoryRootDir:                E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History
+|2024/10/29 05:35:04:581|  RecordingRootDir:              E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings
+|2024/10/29 05:35:04:581|  SegmentationErrorRootDir:      E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings\SegmentationErrors
+|2024/10/29 05:35:04:581|  LoggingRootDir:                E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging
+|2024/10/29 05:35:04:581|  ExceptionsRootDir:             E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging\Exceptions
+|2024/10/29 05:35:04:581|  SettingsHistoryRootDir:        E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\SettingsHistory
+|2024/10/29 05:35:04:581|  CameraConfigHistoryRootDir:    E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\CameraConfigHistory
+|2024/10/29 05:35:04:581|  SnapshotsRootDir:              E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\Snapshots
+|2024/10/29 05:35:04:581|  
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\CONFIG
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS\SEGMENTATIONERRORS
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\LOGGING
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\LOGGING\EXCEPTIONS
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SETTINGSHISTORY
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SNAPSHOTS
+|2024/10/29 05:35:04:581|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\CAMERACONFIGHISTORY
+|2024/10/29 05:35:04:773|  
+|2024/10/29 05:35:04:773|  ======================================================================
