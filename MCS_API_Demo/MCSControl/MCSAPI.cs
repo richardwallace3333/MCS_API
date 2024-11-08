@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace MCSControl
 {
@@ -33,6 +34,8 @@ namespace MCSControl
         GetRecordingRootDIR,
         SetRecordingRootDIR,
         GetStatusSettings,
+        HeartBeat,
+        SaveParamSettings
     }
     public class MCSAPI
     {
@@ -41,21 +44,28 @@ namespace MCSControl
 
         public MCSAPI()
         {
-            requester = new RequestSocket();
         }
 
         public (bool result, string status) Connect()
         {
             try
             {
+                requester = new RequestSocket();
                 requester.Connect(address);
                 var connectMessage = new MCSMessage
                 {
                     Command = MCSCommand.Connect
                 };
                 var response = SendCommand(connectMessage);
-                var receivedMCSMessage = JsonConvert.DeserializeObject<MCSMessage>(response);
-                return (true, receivedMCSMessage.Parameter1);
+                if (response != null)
+                {
+                    var receivedMCSMessage = JsonConvert.DeserializeObject<MCSMessage>(response);
+                    return (true, receivedMCSMessage.Parameter1);
+                } else
+                {
+                    return (false, null);
+                }
+
             }
             catch (Exception ex)
             {
@@ -126,15 +136,31 @@ namespace MCSControl
             return ConvertCaptureImages(response);
         }
 
-        private string SendCommand(MCSMessage message)
+        private string SendCommand(MCSMessage message, int timeoutMilliseconds = 2000)
         {
             if (requester != null)
             {
-                var jsonMessage = JsonConvert.SerializeObject(message);
-                requester.SendFrame(jsonMessage);
+                try
+                {
+                    var jsonMessage = JsonConvert.SerializeObject(message);
+                    requester.SendFrame(jsonMessage);
 
-                string receivedMessage = requester.ReceiveFrameString();
-                return receivedMessage; // May need further processing based on command type
+                    var receiveTask = Task.Run(() => requester.ReceiveFrameString());
+                    var timeoutTask = Task.Delay(timeoutMilliseconds);
+
+                    var completedTask = Task.WhenAny(receiveTask, timeoutTask).Result;
+                    if (completedTask == receiveTask)
+                    {
+                        return receiveTask.Result;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                } catch (Exception e)
+                {
+                    return null;
+                }
             }
 
             return null;
@@ -217,6 +243,40 @@ namespace MCSControl
             var response = SendCommand(message);
             var receivedMCSMessage = JsonConvert.DeserializeObject<MCSMessage>(response);
             return receivedMCSMessage.Parameter1;
+        }
+
+        public void setRecordingRootDIR(string recordingDIR)
+        {
+            var message = new MCSMessage
+            {
+                Command = MCSCommand.SetRecordingRootDIR,
+                Parameter1 = recordingDIR
+            };
+            SendCommand(message);
+        }
+
+        public void saveParamSettings()
+        {
+            var message = new MCSMessage
+            {
+                Command = MCSCommand.SaveParamSettings
+            };
+            SendCommand(message);
+        }
+
+        public bool heartBeat()
+        {
+            var message = new MCSMessage
+            {
+                Command = MCSCommand.HeartBeat
+            };
+            var response = SendCommand(message);
+            if (response == null)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public Dictionary<string, Dictionary<string, string>> GetStatusSettings()

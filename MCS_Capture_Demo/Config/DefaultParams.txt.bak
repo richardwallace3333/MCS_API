@@ -1,8 +1,10 @@
 [Camera]
-Camera Enabled = 0
-Ruler1 IP = 192.168.0.101
+Camera Enabled = 01
+Ruler1 IP = 192.168.0.111
 Ruler2 IP = 192.168.0.102
 Ruler3 IP = 192.168.0.103
+Ruler4 IP = 192.168.0.104
+Ruler5 IP = 192.168.0.115
 
 [MCS Settings]
 MCS NumRulers = 3
@@ -14,8 +16,8 @@ MCS SrcReferenceX0L (px) = 0
 MCS SrcReferenceX0R (px) = 3390
 MCS SrcReferenceX1L (px) = 540
 MCS SrcReferenceX1R (px) = 3323
-MCS SrcReferenceX2L (px) = 384
-MCS SrcReferenceX2R (px) = 4095
+MCS SrcReferenceX2L (px) = 540
+MCS SrcReferenceX2R (px) = 3323
 MCS SrcReferenceZ (px) = 42000
 MCS DstWidth (px) = 9000
 MCS DstMMPPZ = 0.010
@@ -27,6 +29,10 @@ MCS Rescale Z Enabled = 1
 MCS Blending Enabled = 1
 MCS Display Individual Ruler CBs = 1
 MCS Reverse Conveyor Detect Enabled = 0
+MCS SrcReferenceX3L (px) = 540
+MCS SrcReferenceX3R (px) = 3323
+MCS SrcReferenceX4L (px) = 384
+MCS SrcReferenceX4R (px) = 4095
 
 [Capture Settings]
 Raw Capture ROI Left (px) = 72

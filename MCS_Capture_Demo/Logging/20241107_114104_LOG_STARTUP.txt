@@ -1,0 +1,25 @@
+|2024/11/07 11:41:04:242|  
+|2024/11/07 11:41:04:242|  ======================================================================
+|2024/11/07 11:41:04:242|  ===                    PalletCheck MCS STARTUP                     ===
+|2024/11/07 11:41:04:242|  ======================================================================
+|2024/11/07 11:41:04:242|  
+|2024/11/07 11:41:04:242|  ExeRootDir:                    E:\Upwork\mcs\MCS_Capture_Demo\MCSDemo\bin\x64\Debug
+|2024/11/07 11:41:04:242|  ConfigRootDir:                 E:\Upwork\mcs\MCS_Capture_Demo\Config
+|2024/11/07 11:41:04:242|  HistoryRootDir:                E:\Upwork\mcs\MCS_Capture_Demo\History
+|2024/11/07 11:41:04:242|  RecordingRootDir:              E:\Upwork\mcs\MCS_Capture_Demo\Recordings
+|2024/11/07 11:41:04:242|  SegmentationErrorRootDir:      E:\Upwork\mcs\MCS_Capture_Demo\Recordings\SegmentationErrors
+|2024/11/07 11:41:04:242|  LoggingRootDir:                E:\Upwork\mcs\MCS_Capture_Demo\Logging
+|2024/11/07 11:41:04:242|  ExceptionsRootDir:             E:\Upwork\mcs\MCS_Capture_Demo\Logging\Exceptions
+|2024/11/07 11:41:04:242|  SettingsHistoryRootDir:        E:\Upwork\mcs\MCS_Capture_Demo\History\SettingsHistory
+|2024/11/07 11:41:04:242|  CameraConfigHistoryRootDir:    E:\Upwork\mcs\MCS_Capture_Demo\History\CameraConfigHistory
+|2024/11/07 11:41:04:242|  SnapshotsRootDir:              E:\Upwork\mcs\MCS_Capture_Demo\History\Snapshots
+|2024/11/07 11:41:04:242|  
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\CONFIG
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\HISTORY
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\RECORDINGS
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\RECORDINGS\SEGMENTATIONERRORS
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\LOGGING
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\LOGGING\EXCEPTIONS
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\HISTORY\SETTINGSHISTORY
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\HISTORY\SNAPSHOTS
+|2024/11/07 11:41:04:242|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\MCS_CAPTURE_DEMO\HISTORY\CAMERACONFIGHISTORY

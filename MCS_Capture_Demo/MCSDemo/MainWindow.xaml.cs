@@ -171,7 +171,15 @@ namespace PalletCheck
 
             ConfigRootDir = RootDir + "\\Config";
             HistoryRootDir = RootDir + "\\History";
-            RecordingRootDir = RootDir + "\\Recordings";
+            if (File.Exists(HistoryRootDir + "\\LastUsedRecordingDIRFile.txt"))
+            {
+                RecordingRootDir = File.ReadAllText(HistoryRootDir + "\\LastUsedRecordingDIRFile.txt");
+            }
+            else
+            {
+                RecordingRootDir = RootDir + "\\Recordings";
+            }
+
             SegmentationErrorRootDir = RecordingRootDir + "\\SegmentationErrors";
             LoggingRootDir = RootDir + "\\Logging";
             ExceptionsRootDir = RootDir + "\\Logging\\Exceptions";
@@ -300,9 +308,16 @@ namespace PalletCheck
                     break;
                 case MCSCommand.SetRecordingRootDIR:
                     RecordingRootDir = message.Parameter1;
+                    File.WriteAllText(HistoryRootDir + "\\LastUsedRecordingDIRFile.txt", RecordingRootDir);
                     break;
                 case MCSCommand.GetStatusSettings:
                     message.Parameter1 = JsonConvert.SerializeObject(StatusStorage.Categories);
+                    break;
+                case MCSCommand.HeartBeat:
+                    message.Parameter1 = "OK";
+                    break;
+                case MCSCommand.SaveParamSettings:
+                    ParamStorage.Save(MainWindow.LastUsedParamFile);
                     break;
             }
             var jsonMessage = JsonConvert.SerializeObject(message);

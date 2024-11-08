@@ -14,5 +14,7 @@
     RemoveCamera,
     GetRecordingRootDIR,
     SetRecordingRootDIR,
-    GetStatusSettings
+    GetStatusSettings,
+    HeartBeat,
+    SaveParamSettings
 }

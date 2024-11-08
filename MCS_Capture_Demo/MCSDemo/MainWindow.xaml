@@ -37,7 +37,7 @@
                 BYPASS
             </Button>
 
-            <Button x:Name="btnRecord" Background="#FF1ADB37" FontSize="18" FontWeight="Bold" Margin="5" Width="100" Foreground="White" Click="btnRecord_Click">
+            <Button x:Name="btnRecord" Background="#FF2D5774" FontSize="18" FontWeight="Bold" Margin="5" Width="100" Foreground="White" Click="btnRecord_Click">
                 RECORD
             </Button>
 

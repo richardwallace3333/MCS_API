@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace MCSControl
 {
@@ -57,6 +58,7 @@ namespace MCSControl
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -206,7 +208,7 @@ namespace MCSControl
             this.tabControl1.Location = new System.Drawing.Point(428, 100);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(693, 854);
+            this.tabControl1.Size = new System.Drawing.Size(752, 854);
             this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
@@ -214,7 +216,7 @@ namespace MCSControl
             this.tabPage1.Location = new System.Drawing.Point(8, 39);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(677, 807);
+            this.tabPage1.Size = new System.Drawing.Size(736, 807);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -224,7 +226,7 @@ namespace MCSControl
             this.tabPage2.Location = new System.Drawing.Point(8, 39);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(677, 807);
+            this.tabPage2.Size = new System.Drawing.Size(736, 807);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -241,7 +243,7 @@ namespace MCSControl
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(592, 24);
+            this.button10.Location = new System.Drawing.Point(584, 24);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(195, 65);
             this.button10.TabIndex = 16;
@@ -283,7 +285,7 @@ namespace MCSControl
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(1127, 100);
+            this.tabControl2.Location = new System.Drawing.Point(1186, 100);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(779, 846);
@@ -311,7 +313,7 @@ namespace MCSControl
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(918, 24);
+            this.button13.Location = new System.Drawing.Point(977, 24);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(195, 65);
             this.button13.TabIndex = 21;
@@ -321,7 +323,7 @@ namespace MCSControl
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(1703, 44);
+            this.button14.Location = new System.Drawing.Point(1762, 24);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(195, 65);
             this.button14.TabIndex = 22;
@@ -329,11 +331,22 @@ namespace MCSControl
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.btnUpdateStatusSettings_Click);
             // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(789, 24);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(178, 65);
+            this.button15.TabIndex = 23;
+            this.button15.Text = "Save";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1919, 1208);
+            this.ClientSize = new System.Drawing.Size(1995, 991);
+            this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.tabControl2);
@@ -397,6 +410,7 @@ namespace MCSControl
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
     }
 }
 

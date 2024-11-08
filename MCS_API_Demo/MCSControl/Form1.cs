@@ -14,20 +14,46 @@ namespace MCSControl
         DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
         DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
         Dictionary<string, DataGridViewRow> rowDict = new Dictionary<string, DataGridViewRow>();
+        private static Timer _timer;
 
         public Form1()
         {
             InitializeComponent();
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.Size = new Size(1012, 532);
+            this.Text = "MCS API"; // Set your application name here
+            handleDisconnect();
+            InitializeTimer();
+        }
+
+        private void InitializeTimer()
+        {
+            _timer = new Timer();
+            _timer.Interval = 5000; 
+            _timer.Tick += Timer_Tick;
+            _timer.Start();
+        }
+
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (!mcsAPI.heartBeat())
+            {
+                mcsAPI.Disconnect();
+                handleDisconnect();
+            }
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
             (bool, string) connection = mcsAPI.Connect();
-            handleConnect(connection.Item1, connection.Item2);
-            updateParamSettings();
-            updateStatusSettings();
+            if (connection.Item1)
+            {
+                handleConnect(connection.Item2);
+                updateParamSettings();
+                updateStatusSettings();
+            }
         }
 
         private void btnDisconnect_Click(object sender, EventArgs e)
@@ -69,54 +95,88 @@ namespace MCSControl
         {
             label4.Text = mcsAPI.GetCameraCount();
         }
-        private void handleConnect(bool isConnected, string status)
+        private void handleConnect(string status)
         {
-            if (isConnected)
+            disableButton(button1);
+            enableButton(button2);
+            if (status == "START")
             {
-                button1.Enabled = false;
-                button2.Enabled = true;
-                if (status == "START")
-                {
-                    button3.Enabled = true;
-                    button4.Enabled = false;
-                }
-                else
-                {
-                    button3.Enabled = false;
-                    button4.Enabled = true;
-                }
-                button5.Enabled = true;
-                button6.Enabled = true;
-                button7.Enabled = true;
-                button8.Enabled = true;
-                button11.Enabled = true;
-                label1.Text = "Status: Connected";
+                enableButton(button3);
+                disableButton(button4);
             }
+            else
+            {
+                disableButton(button3);
+                enableButton(button4);
+            }
+            enableButton(button5);
+            enableButton(button6);
+            enableButton(button7);
+            enableButton(button8);
+            enableButton(button9);
+            enableButton(button10);
+            enableButton(button11);
+            enableButton(button12);
+            enableButton(button13);
+            enableButton(button14);
+            enableButton(button15);
+            label1.Text = "Status: Connected";
         }
         private void handleDisconnect()
         {
-            button1.Enabled = true;
-            button2.Enabled = false;
-            button3.Enabled = false;
-            button4.Enabled = false;
-            button5.Enabled = false;
-            button6.Enabled = false;
-            button7.Enabled = false;
-            button8.Enabled = false;
-            button11.Enabled = false;
+            enableButton(button1);
+            disableButton(button2);
+            disableButton(button3);
+            disableButton(button4);
+            disableButton(button5);
+            disableButton(button6);
+            disableButton(button7);
+            disableButton(button8);
+            disableButton(button9);
+            disableButton(button10);
+            disableButton(button11);
+            disableButton(button12);
+            disableButton(button13);
+            disableButton(button14);
+            disableButton(button15);
             label1.Text = "Status: Disconnected";
         }
 
         private void handleStart()
         {
-            button3.Enabled = false;
-            button4.Enabled = true;
+            disableButton(button3);
+            enableButton(button4);
         }
 
         private void handleStop()
         {
-            button3.Enabled = true;
-            button4.Enabled = false;
+            enableButton(button3);
+            disableButton(button4);
+        }
+
+        private void enableButton(Button button)
+        {
+            button.Enabled = true;
+            button.ForeColor = Color.White;
+            if (button == button4)
+            {
+                button.BackColor = Color.Red;
+            }
+            else if (button == button11 || button == button12)
+            {
+                button.BackColor = Color.Purple;
+            }
+            else
+            {
+                button.BackColor = ColorTranslator.FromHtml("#2D5774");
+            }
+        }
+
+        private void disableButton(Button button)
+        {
+            button.Enabled = false;
+            button.ForeColor = Color.Black;
+            button.BackColor = Color.Gray;
         }
         private void btnAddCamera_Click(object sender, EventArgs e)
         {
@@ -135,6 +195,18 @@ namespace MCSControl
         {
             label5.Text = mcsAPI.GetRecordingRootDIR();
         }
+        private void btnSetRecordingRootDIR_Click(object sender, EventArgs e)
+        {
+            var RecordingRootDir = mcsAPI.GetRecordingRootDIR();
+            FolderBrowserDialog OFD = new FolderBrowserDialog();
+            OFD.RootFolder = Environment.SpecialFolder.MyComputer;
+            OFD.SelectedPath = RecordingRootDir;
+            OFD.ShowNewFolderButton = false;
+            if (OFD.ShowDialog() == DialogResult.OK)
+            {
+                mcsAPI.setRecordingRootDIR(OFD.SelectedPath);
+            }
+        }
 
         private void updateParamSettings()
         {
@@ -145,11 +217,6 @@ namespace MCSControl
         {
             StatusCategories = mcsAPI.GetStatusSettings();
             BuildPagesFromStatusStorage();
-        }
-
-        private void btnSetRecordingRootDIR_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnUpdateParamSettings_Click(object sender, EventArgs e)
@@ -259,6 +326,11 @@ namespace MCSControl
                     rowDict.Add(full_key, row);
                 }
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            mcsAPI.saveParamSettings();
         }
     }
 }
