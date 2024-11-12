@@ -113,6 +113,11 @@ namespace MCS
             SetCaptureState(CaptureState.Stopped);
         }
 
+        public List<RulerCamera> getRulerCamers()
+        {
+            return Rulers;
+        }
+
         public void Shutdown()
         {
             try

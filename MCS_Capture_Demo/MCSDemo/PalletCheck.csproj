@@ -131,6 +131,7 @@
     <Compile Include="BitmapSourceConverter.cs" />
     <Compile Include="CaptureBuffer.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="MCSAPI.cs" />
     <Compile Include="MCSCamera.cs" />
     <Compile Include="MCSCommand.cs" />
     <Compile Include="MCSFrame.cs" />

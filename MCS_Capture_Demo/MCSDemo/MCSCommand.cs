@@ -16,5 +16,6 @@
     SetRecordingRootDIR,
     GetStatusSettings,
     HeartBeat,
-    SaveParamSettings
+    SaveParamSettings,
+    CaptureId
 }

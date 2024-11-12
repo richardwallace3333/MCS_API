@@ -35,7 +35,8 @@ namespace MCSControl
         SetRecordingRootDIR,
         GetStatusSettings,
         HeartBeat,
-        SaveParamSettings
+        SaveParamSettings,
+        CaptureId
     }
     public class MCSAPI
     {
@@ -136,7 +137,7 @@ namespace MCSControl
             return ConvertCaptureImages(response);
         }
 
-        private string SendCommand(MCSMessage message, int timeoutMilliseconds = 2000)
+        private string SendCommand(MCSMessage message, int timeoutMilliseconds = 20000)
         {
             if (requester != null)
             {
@@ -168,11 +169,15 @@ namespace MCSControl
 
         private (Image img1, Image img2) ConvertCaptureImages(string response)
         {
-            var receivedMCSMessage = JsonConvert.DeserializeObject<MCSMessage>(response);
-            Image image1 = receivedMCSMessage.Parameter1 != null ? ConvertBase64ToImage(receivedMCSMessage.Parameter1) : null;
-            Image image2 = receivedMCSMessage.Parameter2 != null ? ConvertBase64ToImage(receivedMCSMessage.Parameter2) : null;
+            if (response != null)
+            {
+                var receivedMCSMessage = JsonConvert.DeserializeObject<MCSMessage>(response);
+                Image image1 = receivedMCSMessage.Parameter1 != null ? ConvertBase64ToImage(receivedMCSMessage.Parameter1) : null;
+                Image image2 = receivedMCSMessage.Parameter2 != null ? ConvertBase64ToImage(receivedMCSMessage.Parameter2) : null;
+                return (image1, image2);
+            }
 
-            return (image1, image2);
+            return (null, null);
         }
 
         private Image ConvertBase64ToImage(string base64String)

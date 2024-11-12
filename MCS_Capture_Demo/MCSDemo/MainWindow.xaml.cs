@@ -20,6 +20,8 @@ using NetMQ;
 using Newtonsoft.Json;
 using System.Runtime.Remoting.Contexts;
 using System.Windows.Media.Imaging;
+using MCSControl;
+using System.Data;
 
 namespace PalletCheck
 {
@@ -54,6 +56,7 @@ namespace PalletCheck
         public static string ConfigRootDir = "";
         public static string HistoryRootDir = "";
         public static string RecordingRootDir = "";
+        public static string ProcessPalletLastDir = "";
         public static string SegmentationErrorRootDir = "";
         public static string LoggingRootDir = "";
         public static string ExceptionsRootDir = "";
@@ -80,6 +83,7 @@ namespace PalletCheck
 
         Brush ButtonBackgroundBrush;
         MCSFrame tempFrame;
+        MCSAPI mcsAPI = new MCSAPI();
 
         public static string _LastUsedParamFile = "";
         public static string LastUsedParamFile
@@ -456,14 +460,22 @@ namespace PalletCheck
         {
             // !!! THIS IS CALLED FROM THE MCSCamera THREAD !!!!
             Logger.WriteLine(Cam.CameraName + "  ConnectionState: " + NewState.ToString());
-            StatusStorage.Set("Camera." + Cam.CameraName + ".ConnState", NewState.ToString());
+            var rulers = Cam.getRulerCamers();
+            foreach (RulerCamera Ruler in rulers)
+            {
+                StatusStorage.Set("Camera." + Ruler.CameraName + ".ConnState", Ruler.CameraConnectionState.ToString());
+            }
         }
 
         private void OnCaptureStateChange(MCSCamera Cam, MCSCamera.CaptureState NewState)
         {
             // !!! THIS IS CALLED FROM THE MCSCamera THREAD !!!!
             Logger.WriteLine(Cam.CameraName + "  CaptureState: " + NewState.ToString());
-            StatusStorage.Set("Camera." + Cam.CameraName + ".CaptureState", NewState.ToString());
+            var rulers = Cam.getRulerCamers();
+            foreach (RulerCamera Ruler in rulers)
+            {
+                StatusStorage.Set("Camera." + Ruler.CameraName + ".CaptureState", Ruler.CameraCaptureState.ToString());
+            }
         }
 
 
@@ -494,6 +506,7 @@ namespace PalletCheck
             //Dispatcher.Invoke(new addBufferCB(MainWindow.AddCaptureBufferBrowser), new object[] { "Live", IncomingBuffer });
             // Console.WriteLine("BUFFER RECEIVED! " + DateTime.Now.ToString());
             Logger.WriteLine("MainWindow::OnNewFrameReceived completed");
+            mcsAPI.sendCaptureId(tempFrame.FrameID.ToString());
         }
 
 
@@ -758,10 +771,14 @@ namespace PalletCheck
 
             OFD.Filter = "R3 Files|*_0_rng.r3";
             OFD.InitialDirectory = MainWindow.RecordingRootDir;
+            if (MainWindow.ProcessPalletLastDir != "") {
+                OFD.InitialDirectory = MainWindow.ProcessPalletLastDir;
+            }
             try
             {
                 if (OFD.ShowDialog() == true)
                 {
+                    MainWindow.ProcessPalletLastDir = System.IO.Path.GetDirectoryName(OFD.FileName);
                     LoadAndProcessCaptureFile(OFD.FileName, true);
                 }
                 else

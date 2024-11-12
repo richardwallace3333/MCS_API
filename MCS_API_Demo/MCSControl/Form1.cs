@@ -2,7 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using NetMQ.Sockets;
+using NetMQ;
+
 namespace MCSControl
 {
     public partial class Form1 : Form
@@ -14,8 +18,10 @@ namespace MCSControl
         DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
         DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
         Dictionary<string, DataGridViewRow> rowDict = new Dictionary<string, DataGridViewRow>();
-        private static Timer _timer;
 
+        // ZMQ
+        private Task _listenerTask;
+        private bool _isListening;
         public Form1()
         {
             InitializeComponent();
@@ -24,25 +30,39 @@ namespace MCSControl
             this.Size = new Size(1012, 532);
             this.Text = "MCS API"; // Set your application name here
             handleDisconnect();
-            InitializeTimer();
+            StartZMQListener();
         }
 
-        private void InitializeTimer()
+        private void StartZMQListener()
         {
-            _timer = new Timer();
-            _timer.Interval = 5000; 
-            _timer.Tick += Timer_Tick;
-            _timer.Start();
-        }
-
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            if (!mcsAPI.heartBeat())
+            _isListening = true;
+            _listenerTask = Task.Run(() =>
             {
-                mcsAPI.Disconnect();
-                handleDisconnect();
+                using (var server = new ResponseSocket("@tcp://*:6666"))
+                {
+                    while (_isListening)
+                    {
+                        var message = server.ReceiveFrameString();
+                        Console.WriteLine("Received: " + message);
+                        var mcsMessage = JsonConvert.DeserializeObject<MCSMessage>(message);
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            ProcessCommand(mcsMessage, server);
+                        });
+                    }
+                }
+            });
+        }
+        private void ProcessCommand(MCSMessage message, ResponseSocket server)
+        {
+            switch (message.Command)
+            {
+                case MCSCommand.CaptureId:
+                    label2.Text = message.Parameter1;
+                    break;
             }
+            var jsonMessage = JsonConvert.SerializeObject(message);
+            server.SendFrame(jsonMessage);
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -82,8 +102,14 @@ namespace MCSControl
         private void btnGetImages_Click(object sender, EventArgs e)
         {
             (Image, Image) capturedImages = mcsAPI.GetCaptureImages();
-            pictureBox1.Image = capturedImages.Item1;
-            pictureBox2.Image = capturedImages.Item2;
+            if (capturedImages.Item1 != null)
+            {
+                pictureBox1.Image = capturedImages.Item1;
+            }
+            if (capturedImages.Item2 != null)
+            {
+                pictureBox2.Image = capturedImages.Item2;
+            }
         }
 
         private void btnGetStatus_Click(object sender, EventArgs e)
@@ -205,6 +231,7 @@ namespace MCSControl
             if (OFD.ShowDialog() == DialogResult.OK)
             {
                 mcsAPI.setRecordingRootDIR(OFD.SelectedPath);
+                label5.Text = mcsAPI.GetRecordingRootDIR();
             }
         }
 
