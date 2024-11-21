@@ -1,0 +1,14 @@
+
+
+Message:
+Only one usage of each socket address (protocol/network address/port) is normally permittedSource:
+SystemStackTrace:
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at System.Net.Sockets.TcpListener.Start(Int32 backlog)
+   at PalletCheck.PLCComms.ListenerThreadFunc() in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\PLCComms.cs:line 35
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()TargetSite:
+Void DoBind(System.Net.EndPoint, System.Net.SocketAddress)

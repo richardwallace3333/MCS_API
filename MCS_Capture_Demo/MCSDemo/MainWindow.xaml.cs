@@ -83,7 +83,7 @@ namespace PalletCheck
 
         Brush ButtonBackgroundBrush;
         MCSFrame tempFrame;
-        MCSAPI mcsAPI = new MCSAPI();
+        //MCSAPI mcsAPI = new MCSAPI();
 
         public static string _LastUsedParamFile = "";
         public static string LastUsedParamFile
@@ -506,16 +506,11 @@ namespace PalletCheck
             //Dispatcher.Invoke(new addBufferCB(MainWindow.AddCaptureBufferBrowser), new object[] { "Live", IncomingBuffer });
             // Console.WriteLine("BUFFER RECEIVED! " + DateTime.Now.ToString());
             Logger.WriteLine("MainWindow::OnNewFrameReceived completed");
-            mcsAPI.sendCaptureId(tempFrame.FrameID.ToString());
+            /*if (tempFrame != null)
+            {
+                mcsAPI.sendCaptureId(tempFrame.FrameID.ToString());
+            }*/
         }
-
-
-
-
-
-
-
-
         private void SaveSettingsColorUpdate(object sender, EventArgs e)
         {
             if (ParamStorage.HasChangedSinceLastSave)

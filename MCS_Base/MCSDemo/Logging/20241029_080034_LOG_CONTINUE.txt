@@ -1,0 +1,122 @@
+|2024/10/29 08:00:34:378|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:34:378|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:34:378|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:34:378|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:34:378|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:34:378|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:34:378|  
+|2024/10/29 08:00:34:378|  ======================================================================
+|2024/10/29 08:00:34:378|  ===                       EnforceStorageSize                       ===
+|2024/10/29 08:00:34:378|  ======================================================================
+|2024/10/29 08:00:34:378|  
+|2024/10/29 08:00:34:378|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings : is 0 vs 209715200000 with 0/0 files
+|2024/10/29 08:00:34:378|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS\SEGMENTATIONERRORS
+|2024/10/29 08:00:34:378|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings\SegmentationErrors : is 0 vs 52428800000 with 0/0 files
+|2024/10/29 08:00:34:378|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS\SEGMENTATIONERRORS
+|2024/10/29 08:00:34:380|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History : is 1165906 vs 52428800000 with 23/23 files
+|2024/10/29 08:00:34:380|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\CAMERACONFIGHISTORY
+|2024/10/29 08:00:34:380|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SNAPSHOTS
+|2024/10/29 08:00:34:380|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\CameraConfigHistory : is 0 vs 1048576000 with 0/0 files
+|2024/10/29 08:00:34:381|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\CAMERACONFIGHISTORY
+|2024/10/29 08:00:34:381|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\SettingsHistory : is 1165847 vs 1048576000 with 22/22 files
+|2024/10/29 08:00:34:381|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\Snapshots : is 0 vs 10485760000 with 0/0 files
+|2024/10/29 08:00:34:381|  DeleteEmptyDirs False  E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SNAPSHOTS
+|2024/10/29 08:00:34:384|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging : is 2825117 vs 10485760000 with 70/70 files
+|2024/10/29 08:00:34:388|  EnforceStorageSize E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging\Exceptions : is 77011 vs 1048576000 with 29/29 files
+|2024/10/29 08:00:34:389|  
+|2024/10/29 08:00:34:389|  
+|2024/10/29 08:00:34:389|  ======================================================================
+|2024/10/29 08:00:34:389|  ===                         STORAGE UPDATE                         ===
+|2024/10/29 08:00:34:389|  ======================================================================
+|2024/10/29 08:00:34:389|  
+|2024/10/29 08:00:34:402|  Storage.Root  :  0.039 of 0.000 (GB)  |  451 files,  14 folders
+|2024/10/29 08:00:34:403|  Storage.Recording  :  0.000 of 200.000 (GB)  |  0 files,  1 folders
+|2024/10/29 08:00:34:403|  Storage.Recording.SegErrors  :  0.000 of 50.000 (GB)  |  0 files,  0 folders
+|2024/10/29 08:00:34:403|  Storage.Config  :  0.000 of 0.000 (GB)  |  2 files,  0 folders
+|2024/10/29 08:00:34:403|  Storage.History  :  0.001 of 50.000 (GB)  |  23 files,  3 folders
+|2024/10/29 08:00:34:403|  Storage.History.CameraConfig  :  0.000 of 1.000 (GB)  |  0 files,  0 folders
+|2024/10/29 08:00:34:403|  Storage.History.Settings  :  0.001 of 1.000 (GB)  |  22 files,  0 folders
+|2024/10/29 08:00:34:403|  Storage.History.Snapshots  :  0.000 of 10.000 (GB)  |  0 files,  0 folders
+|2024/10/29 08:00:34:408|  Storage.Logging  :  0.003 of 10.000 (GB)  |  70 files,  1 folders
+|2024/10/29 08:00:34:409|  Storage.Logging.Exceptions  :  0.000 of 1.000 (GB)  |  29 files,  0 folders
+|2024/10/29 08:00:34:409|  Storage.Drive.C:\  :  20 free(GB)  149 total(GB)  129 used(GB)
+|2024/10/29 08:00:34:409|  Storage.Drive.D:\  :  315 free(GB)  391 total(GB)  76 used(GB)
+|2024/10/29 08:00:34:409|  Storage.Drive.E:\  :  341 free(GB)  390 total(GB)  49 used(GB)
+|2024/10/29 08:00:35:383|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:35:383|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:35:383|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:35:383|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:35:383|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:35:383|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:36:385|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:36:385|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:36:385|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:36:385|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:36:385|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:36:385|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:37:390|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:37:390|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:37:390|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:37:390|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:37:390|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:37:390|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:38:404|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:38:404|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:38:404|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:38:404|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:38:404|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:38:404|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:39:410|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:39:410|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:39:410|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:39:410|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:39:410|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:39:410|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:40:433|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:40:433|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:40:433|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:40:433|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:40:433|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:40:433|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:44:915|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:44:915|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:44:915|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:44:915|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:44:915|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:44:915|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:45:924|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:45:924|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:45:924|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:45:924|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:45:924|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:45:924|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:46:938|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:46:938|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:46:938|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:46:938|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:46:938|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:46:938|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:47:945|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:47:945|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:47:945|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:47:945|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:47:945|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:47:945|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:48:959|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:48:959|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:00:48:959|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:48:959|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:00:48:959|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:00:48:959|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:01:00:774|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:01:00:774|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:01:00:774|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:01:00:774|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:01:00:774|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:01:00:774|  Cannot find camera Ruler3 at 192.168.0.103
+|2024/10/29 08:01:01:781|  Searching for camera Ruler1 at 192.168.0.101
+|2024/10/29 08:01:01:781|  Cannot find camera Ruler1 at 192.168.0.101
+|2024/10/29 08:01:01:781|  Searching for camera Ruler2 at 192.168.0.102
+|2024/10/29 08:01:01:781|  Cannot find camera Ruler2 at 192.168.0.102
+|2024/10/29 08:01:01:781|  Searching for camera Ruler3 at 192.168.0.103
+|2024/10/29 08:01:01:781|  Cannot find camera Ruler3 at 192.168.0.103

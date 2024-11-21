@@ -30,7 +30,7 @@ namespace MCSControl
             this.Size = new Size(1012, 532);
             this.Text = "MCS API"; // Set your application name here
             handleDisconnect();
-            StartZMQListener();
+            //StartZMQListener();
         }
 
         private void StartZMQListener()

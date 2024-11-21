@@ -1,0 +1,73 @@
+|2024/10/29 05:21:37:927|  
+|2024/10/29 05:21:37:927|  ======================================================================
+|2024/10/29 05:21:37:927|  ===                    PalletCheck MCS STARTUP                     ===
+|2024/10/29 05:21:37:927|  ======================================================================
+|2024/10/29 05:21:37:927|  
+|2024/10/29 05:21:37:927|  ExeRootDir:                    E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\bin\x64\Debug
+|2024/10/29 05:21:37:927|  ConfigRootDir:                 E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Config
+|2024/10/29 05:21:37:927|  HistoryRootDir:                E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History
+|2024/10/29 05:21:37:927|  RecordingRootDir:              E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings
+|2024/10/29 05:21:37:927|  SegmentationErrorRootDir:      E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Recordings\SegmentationErrors
+|2024/10/29 05:21:37:927|  LoggingRootDir:                E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging
+|2024/10/29 05:21:37:927|  ExceptionsRootDir:             E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Logging\Exceptions
+|2024/10/29 05:21:37:927|  SettingsHistoryRootDir:        E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\SettingsHistory
+|2024/10/29 05:21:37:927|  CameraConfigHistoryRootDir:    E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\CameraConfigHistory
+|2024/10/29 05:21:37:927|  SnapshotsRootDir:              E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\History\Snapshots
+|2024/10/29 05:21:37:927|  
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\CONFIG
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\RECORDINGS\SEGMENTATIONERRORS
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\LOGGING
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\LOGGING\EXCEPTIONS
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SETTINGSHISTORY
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\SNAPSHOTS
+|2024/10/29 05:21:37:928|  StorageWatchdog: AddDoNotDeleteDirs E:\UPWORK\MCS\SICK_MCS_CAPTURE_DEMO\MCSDEMO\HISTORY\CAMERACONFIGHISTORY
+|2024/10/29 05:21:38:129|  
+|2024/10/29 05:21:38:129|  ======================================================================
+|2024/10/29 05:21:38:129|  ===                      ParamStorage::Load()                      ===
+|2024/10/29 05:21:38:129|  ======================================================================
+|2024/10/29 05:21:38:129|  
+|2024/10/29 05:21:38:129|  E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\Config\DefaultParams.txt
+|2024/10/29 05:21:38:129|  No file exists
+|2024/10/29 05:21:38:148|  
+|2024/10/29 05:21:38:148|  ======================================================================
+|2024/10/29 05:21:38:148|  ===               CurrentDomainOnUnhandledException                ===
+|2024/10/29 05:21:38:148|  ======================================================================
+|2024/10/29 05:21:38:148|  
+|2024/10/29 05:21:38:149|  
+|2024/10/29 05:21:38:149|  ======================================================================
+|2024/10/29 05:21:38:149|  ===                 !!! EXCEPTION HAS OCCURRED !!!                 ===
+|2024/10/29 05:21:38:149|  ======================================================================
+|2024/10/29 05:21:38:149|  
+|2024/10/29 05:21:38:149|  
+|                       |  
+|                       |  
+|2024/10/29 05:21:38:149|  Message:
+|                       |  An invalid IP address was specified.
+|2024/10/29 05:21:38:157|  Source:
+|                       |  System
+|2024/10/29 05:21:38:158|  StackTrace:
+|                       |     at System.Net.IPAddress.InternalParse(String ipString, Boolean tryParse)
+|                       |     at PalletCheck.PLCComms..ctor(String ConnectIP, Int32 ConnectPort) in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\PLCComms.cs:line 29
+|                       |     at PalletCheck.MainWindow.Window_Loaded(Object sender, RoutedEventArgs e) in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\MainWindow.xaml.cs:line 285
+|                       |     at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+|                       |     at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+|                       |     at System.Windows.BroadcastEventHelper.BroadcastEvent(DependencyObject root, RoutedEvent routedEvent)
+|                       |     at System.Windows.BroadcastEventHelper.BroadcastLoadedEvent(Object root)
+|                       |     at MS.Internal.LoadedOrUnloadedOperation.DoWork()
+|                       |     at System.Windows.Media.MediaContext.FireLoadedPendingCallbacks()
+|                       |     at System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks()
+|                       |     at System.Windows.Media.MediaContext.RenderMessageHandlerCore(Object resizedCompositionTarget)
+|                       |     at System.Windows.Media.MediaContext.RenderMessageHandler(Object resizedCompositionTarget)
+|                       |     at System.Windows.Interop.HwndTarget.OnResize()
+|                       |     at System.Windows.Interop.HwndTarget.HandleMessage(WindowMessage msg, IntPtr wparam, IntPtr lparam)
+|                       |     at System.Windows.Interop.HwndSource.HwndTargetFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+|                       |     at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+|                       |     at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+|                       |     at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+|                       |     at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+|                       |     at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+|                       |     at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+|2024/10/29 05:21:38:158|  TargetSite:
+|                       |  System.Net.IPAddress InternalParse(System.String, Boolean)

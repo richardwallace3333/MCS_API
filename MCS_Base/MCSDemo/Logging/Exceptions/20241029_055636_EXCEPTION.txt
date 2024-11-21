@@ -1,0 +1,43 @@
+
+
+Message:
+The type initializer for 'Sick.GenIStream.genistreamPINVOKE' threw an exception.Source:
+Sick.GenIStreamDotNetStackTrace:
+   at Sick.GenIStream.genistreamPINVOKE.CameraDiscovery_CreateFromProducerFile(String jarg1)
+   at Sick.GenIStream.CameraDiscovery.CreateFromProducerFile(String absolutePath)
+   at PalletCheck.RulerCamera.Startup(String Name, Int32 Index, String IPAddress, NewFrameReceivedCB NewFrameReceivedCallback, ConnectionStateChangeCB ConnectionStateChangeCallback, CaptureStateChangeCB CaptureStateChangeCallback) in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\RulerCamera.cs:line 102
+   at MCS.MCSCamera.Startup(String Name, String IPAddress, NewFrameReceivedCB NewFrameReceivedCallback, ConnectionStateChangeCB ConnectionStateChangeCallback, CaptureStateChangeCB CaptureStateChangeCallback) in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\MCSCamera.cs:line 84
+   at PalletCheck.MainWindow.Window_Loaded(Object sender, RoutedEventArgs e) in E:\Upwork\mcs\Sick_MCS_Capture_Demo\MCSDemo\MainWindow.xaml.cs:line 324
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.BroadcastEventHelper.BroadcastEvent(DependencyObject root, RoutedEvent routedEvent)
+   at System.Windows.BroadcastEventHelper.BroadcastLoadedEvent(Object root)
+   at MS.Internal.LoadedOrUnloadedOperation.DoWork()
+   at System.Windows.Media.MediaContext.FireLoadedPendingCallbacks()
+   at System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks()
+   at System.Windows.Media.MediaContext.RenderMessageHandlerCore(Object resizedCompositionTarget)
+   at System.Windows.Media.MediaContext.RenderMessageHandler(Object resizedCompositionTarget)
+   at System.Windows.Interop.HwndTarget.OnResize()
+   at System.Windows.Interop.HwndTarget.HandleMessage(WindowMessage msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Interop.HwndSource.HwndTargetFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)TargetSite:
+IntPtr CameraDiscovery_CreateFromProducerFile(System.String)
+
+Message:
+The type initializer for 'SWIGExceptionHelper' threw an exception.Source:
+Sick.GenIStreamDotNetStackTrace:
+   at Sick.GenIStream.genistreamPINVOKE.SWIGExceptionHelper..ctor()
+   at Sick.GenIStream.genistreamPINVOKE..cctor()TargetSite:
+Void .ctor()
+
+Message:
+Unable to load DLL 'GenIStreamDotNetInterop': The specified module could not be found. (Exception from HRESULT: 0x8007007E)Source:
+Sick.GenIStreamDotNetStackTrace:
+   at Sick.GenIStream.genistreamPINVOKE.SWIGExceptionHelper.SWIGRegisterExceptionCallbacks_genistream(ExceptionDelegate applicationDelegate, ExceptionDelegate arithmeticDelegate, ExceptionDelegate divideByZeroDelegate, ExceptionDelegate indexOutOfRangeDelegate, ExceptionDelegate invalidCastDelegate, ExceptionDelegate invalidOperationDelegate, ExceptionDelegate ioDelegate, ExceptionDelegate nullReferenceDelegate, ExceptionDelegate outOfMemoryDelegate, ExceptionDelegate overflowDelegate, ExceptionDelegate systemExceptionDelegate)
+   at Sick.GenIStream.genistreamPINVOKE.SWIGExceptionHelper..cctor()TargetSite:
+Void SWIGRegisterExceptionCallbacks_genistream(ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate, ExceptionDelegate)
